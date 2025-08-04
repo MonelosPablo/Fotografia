@@ -1,0 +1,330 @@
+/*fuente del proyecto*/
+    @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+.banner{
+    width: 80vw;
+    height: auto;
+    position: sticky;
+    top: 0px;
+}
+
+
+body{
+    font-family: Cal Sans;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;  
+    
+}
+.menu{
+    position: sticky;
+    font-size: lar7;
+    top: 20%;
+    border: 4px solid rgb(46, 57, 49);
+    background-color: rgb(209, 209, 209) ;
+}
+.flex{
+    height: 100px;
+    display: flex ;
+    align-items: center;
+}
+/* Tabla del menú */
+
+tr{
+    background-color: rgb(209, 209, 209);
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+a:visited{
+
+    color: black;
+
+}
+
+a:hover{
+
+    color: rgb(66, 130, 143);
+
+}
+
+.quiensoy{
+    background-color: rgb(209, 209, 209);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+td{
+    border: 4px solid rgb(46, 57, 49);
+}
+
+/* Fin de tabla del menú */
+
+.inline-block{
+    display: inline-block;
+    height: auto;
+    width: 20vw;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.flex{
+
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 15vw;
+}
+
+.grid-container{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    place-items: center;
+    align-content: space-evenly;
+
+}
+
+.grid-item{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+height: 90%;
+width: 80%;
+place-items: center;
+border: 5px solid;
+border-radius: 55px;
+
+}
+.grid-item:hover{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+height: 95%;
+width: 85%;
+place-items: center;
+border: 5px solid;
+border-color: rgb(148, 191, 195);
+border-radius: 55px;
+background-color: rgb(210, 251, 255);
+
+}
+
+
+
+
+h2{
+    font-weight: 100;
+}
+
+h3{
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+}
+
+.ejemplo{
+    width: auto;
+    height: 20vh;
+
+}
+
+ol{
+    text-align: center;
+    background-color: rgb(209, 209, 209);
+    border: 4px solid rgb(46, 57, 49);
+}
+
+
+/*sección contacto*/
+
+.box-contacto{
+    display: grid;
+    justify-items: center;
+    border: 4px solid rgb(46, 57, 49);
+    justify-self: center;
+    width: 50vw;
+}
+
+.message-box {
+    display: grid;
+    justify-self: center;
+    border: 5px solid #919191;
+    width: 30vw;
+    height: 28vh;
+    padding: 20px;
+    margin-bottom: 10px;
+
+}
+.message-input {
+    width: 100%;
+    height: 20vh;
+    padding: 15px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.send-button {
+    cursor: pointer;
+
+}
+
+.comprar{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(209, 209, 209);
+    border: 4px solid rgb(46, 57, 49);
+}
+
+.rnumero:focus{
+    background-color: rgb(100, 212, 72);
+    font-weight: bold;
+}
+
+
+/*probando*/
+.links{
+    display: grid;
+    max-width: 65%;
+    place-items: center;
+    font-size: large;
+}
+
+.portadas{
+    width: 15vw;
+    height: auto;
+    display: inline;
+    color: rgb(46, 57, 49);
+    font-weight: bold;
+}
+
+
+/* Final de la página */
+.instagram{
+     width: 4%;
+}
+
+.whatsapp{
+     width: 3%;
+}
+
+/*MediaQueri para tablet*/
+
+@media (minwidth: 431px)and (max-width: 800px){
+
+
+
+}
+
+/*MediaQueri para celular*/
+
+@media (min-width: 320px) and (max-width:430px){
+.menu{
+    position: sticky;
+    font-size: medium;
+    top: 7%;
+    border: 4px solid rgb(46, 57, 49);
+    text-decoration: none;
+    background-color: rgb(209, 209, 209) ;
+}
+
+.portadas{
+    width: 25vw;
+    height: auto;
+    display: inline;
+    color: rgb(46, 57, 49);
+    font-weight: bold;
+}
+
+.grid-container{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    place-items: center;
+    align-content: space-evenly;
+}
+
+
+.grid-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    border: 5px solid;
+    border-radius: 35px;
+    width: 20vh;
+    height: 20vh;
+   align-self: center;
+   align-items: center;
+
+}
+.grid-item:hover{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    border: 5px solid;
+    border-color: rgb(148, 191, 195);
+    border-radius: 35px;
+    width: 20vh;
+    height: 20vh;
+   align-self: center;
+    background-color: rgb(210, 251, 255);
+}
+
+.flex{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 15vw;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-size: medium;
+}
+
+.links{
+    display: grid;
+    max-width: 100%;
+    place-items: center;
+    font-size: small;
+}
+
+.instagram{
+     width: 14%;
+}
+
+.whatsapp{
+     width: 6%;
+}
+
+.box-contacto{
+    display: grid;
+    justify-items: center;
+    border: 4px solid rgb(46, 57, 49);
+    justify-self: center;
+    width: 80vw;
+}
+
+.message-box {
+    display: grid;
+    justify-self: center;
+    border: 5px solid #919191;
+    width: 60vw;
+    height: 28vh;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+}
