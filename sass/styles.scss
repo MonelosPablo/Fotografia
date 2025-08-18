@@ -1,0 +1,35 @@
+@use "variables" as v;
+@use "header";
+@use "carousel";
+@use "footer";
+@use "contacto";
+@use "login";
+@use "albumes";
+@use "fotografo";
+@use "fotos";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    color: v.$color2;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+            text-align: center;
+            color: v.$color1;
+}
+
+.d-grid{
+    .btn{
+        a{
+            text-decoration: none;
+            color: v.$color2;
+        }
+    }
+}
+

@@ -1,0 +1,71 @@
+@use "variables" as v;
+
+h1{
+    color: v.$color5;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: v.$color2;
+    color: v.$color5;
+
+    a{
+        .logo{
+            margin-top: 10%;
+            margin-bottom: 10%;
+            height: 10vh;
+            width: auto;
+        }
+    }
+    ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        align-items: center;
+        li{
+            
+            a{
+                text-decoration: none;
+                color: v.$color1;
+            }
+        }
+    }
+}
+/*MediaQueri para celular*/
+
+@media (min-width: 320px) and (max-width:430px){
+body{
+    .flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: v.$color1;
+        color: v.$color2;
+
+        a{
+            .logo{
+                margin-top: 10%;
+                margin-bottom: 10%;
+                height: 2vh;
+                width: auto;
+            }
+        }
+        ul{
+            display: flex;
+            gap: 20px;
+            width: 5px;
+            list-style: none;
+            align-items: center;
+            li{
+                
+                a{
+                    text-decoration: none;
+                    color: v.$color1;
+                }
+            }
+        }
+    }
+    }
+}

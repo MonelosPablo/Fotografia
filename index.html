@@ -4,46 +4,67 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/styles/styles.css">
-        <title>Inicio</title>
+        <link rel="stylesheet" href="./assets/styles/styles.css">    
+        <title>FotosYa</title>
     </head>
 
     <body>
-        <!--Banner-->
-        <a href="https://www.instagram.com/_natcap"><img src="./assets/img/banner.png" alt="Instagram" class="banner"></a>
-
-        <h1>INICIO</h1>
-
-        <!--Menú tabla (fijo)-->
-        <nav class="menu">
-            <ul class="inline-block"><a href="./assets/pages/albumes.html">QUIERO MI FOTO</a></ul>
-            <ul class="inline-block"><a href="./assets/pages/quiensoy.html">Quién soy</a></ul>
-            <ul class="inline-block"><a href="./assets/pages/portfolio.html">Portfolio</a></ul>
-            <ul class="inline-block"><a href="./assets/pages/contacto.html">Contacto</a></ul>
-        </nav>
-    <!--Lista ordenada con los pasos a seguir para la compra-->
-            <br><br>
-        <img src="./assets/img/image3.jpg" alt="Ejemplo de foto" class="ejemplo">
-        <img src="./assets/img/image2.jpg" alt="Ejemplo de foto" class="ejemplo">
-        <img src="./assets/img/image1.jpg" alt="Ejemplo de foto" class="ejemplo">
-        <img src="./assets/img/image4.jpg" alt="Ejemplo de foto" class="ejemplo">
-
-            <br><br>
-        <nav class="menu">
-            <h3>Comprá tus fotos en alta calidad de forma rápida, sencilla y segura</h3>
-            <li>Buscá tus fotos en la sección <a href="./assets/pages/albumes.html">QUIERO MI FOTO</a></li>
-            <li>Contactate conmigo en la sección de <a href="./assets/pages/contacto.html">Contacto</a></li>
-            <li>Indicame el número de foto y obtené tus archivos en alta calidad</li>
+<!--Menú de navegacion-->
+        <header class="flex">
+            <a href="./index.html">
+                <img src="./assets/img/logo_beige1.png" alt="Nature Capture" class="logo">
+            </a>
+            <h1>¡TUS FOTOS AL INSTANTE!</h1>
+            <ul>
+                <li><a href="./assets/pages/albumes.html">Buscar Fotos</a></li>
+                <li><a href="./assets/pages/login.html">Vender Fotos</a></li>
+                <li><a href="./assets/pages/fotografo1.html">Contratar fotografo</a></li>
+                <li><a href="./assets/pages/contacto.html">Contacto</a></li>
+                <li><a href="./assets/pages/login.html">
+                    <button type="button" class="btn btn-light">Ingresar</button>
+                </a></li>
+            </ul>
+        </header>
+        <!--Carrusel de fotos-->
+        <section class="fotos">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="transition: transform 3s ease-out;">
+      <img src="./assets/img/image1.png" class="d-block" alt="...">
+    </div>
+    <div class="carousel-item" style="transition: transform 3s ease-out;">
+      <img src="./assets/img/image2.png" class="d-block" alt="...">
+    </div>
+    <div class="carousel-item" style="transition: transform 3s ease-out;">
+      <img src="./assets/img/image3.png" class="d-block" alt="...">
+    </div>
+    <div class="carousel-item" style="transition: transform 3s ease-out;">
+      <img src="./assets/img/image4.png" class="d-block" alt="...">
+    </div>
+  </div>
+</div>
+</section>
+<!--botones para ir a compra o venta-->
+        <h2>Comprá tus fotos practicando tu actividad favorita</h2>
             <br>
-        </nav>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <button class="btn btn-info" type="button">
+                    <a href="./assets/pages/albumes.html">Comprar Fotos
+                    </a>
+                </button>
+                <button class="btn btn-info" type="button">
+                    <a href="./assets/pages/login.html">Vender Fotos
+                    </a>
+                </button>
+            </div>
+            <br>   
             <br>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     </body>
-    <!--Final de la página-->
+    <!--Final de la página/redes sociales-->
     <footer>
-        <h6>Mis redes</h6>
-        <a href="https://linktr.ee/naturecapture"><img src="./assets/img/logo_linktree.png" alt="Más redes" class="instagram"></a>
-        <a href="https://www.instagram.com/_natcap/"><img src="./assets/img/logo_instagram.png" alt="Instagram" class="instagram"></a>
+        <a href="https://linktr.ee/naturecapture"><img src="./assets/img/logo_linktree.png" alt="Más redes" class="redes"></a>
+        <a href="https://www.instagram.com/_natcap/"><img src="./assets/img/logo_instagram.png" alt="Instagram" class="redes"></a>
     </footer>
 
 </html>

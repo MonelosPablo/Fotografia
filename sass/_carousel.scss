@@ -1,0 +1,18 @@
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .carousel{
+    $carousel-transition-duration: .4s;
+        .carousel-inner{
+            .carousel-item{
+                .d-block{
+                    width: 100vw;
+                }
+            }
+    }
+}
+}

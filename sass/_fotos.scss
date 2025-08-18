@@ -1,0 +1,15 @@
+@use "variables" as v;
+.volver{
+        display: flex;
+    justify-content: center;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+.foto{
+
+    margin: 20px;
+    gap: 20px;
+    height:25vh;
+}    
+}

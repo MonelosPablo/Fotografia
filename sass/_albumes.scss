@@ -1,0 +1,36 @@
+@use "variables" as v;
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px;
+    gap: 30px;
+    place-items: center;
+
+    .grid-item{
+        border: solid 4px;
+        border-color: v.$color1;
+        border-radius: 15px;
+        .links{
+            text-decoration: none;
+            color: v.$color1;
+            max-width: 30vw;
+
+            .portadas{
+                max-height: 25vh;
+
+            }
+
+        }
+
+    }
+    .grid-item:hover{
+        border: solid 4px;
+        border-color: v.$color2;
+    .links:hover{
+            text-decoration: none;
+            color: v.$color2;
+    }
+    
+}
+}

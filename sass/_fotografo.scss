@@ -1,0 +1,17 @@
+@use "variables" as v;
+@use "footer";
+table{
+        display: flex;
+justify-content: center;
+        .quiensoy{
+        display: flex;
+        flex-direction: column;
+            td{
+                border: solid 3px;
+                margin: 5px;
+                align-items: center;
+                text-align: center;
+
+            }
+        }
+}
