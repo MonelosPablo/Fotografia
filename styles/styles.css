@@ -40,7 +40,7 @@ h1 {
   body .flex a .logo {
     margin-top: 10%;
     margin-bottom: 10%;
-    height: 2vh;
+    height: 5vh;
     width: auto;
   }
   body .flex ul {
@@ -108,6 +108,22 @@ footer .redes {
   align-items: center;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .login .form-floating {
+    width: 20vw;
+  }
+  .login .form-floating .form-control {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

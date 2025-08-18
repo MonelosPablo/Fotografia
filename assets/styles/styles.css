@@ -159,4 +159,80 @@ h2 {
   color: rgb(0, 63, 90);
 }
 
+@media (min-width: 320px) and (max-width:430px){
+.flex a .logo {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: 12vw;
+  width: auto;
+  margin-left: 10px;
+}
+
+.flex ul {
+  display: flex;
+  gap: 20px;
+  width: 425px;
+  list-style: none;
+  align-items: center;
+}
+h1{
+margin-left: 10px;
+font-size: 11px;
+text-align: justify;
+
+}
+.flex ul li a {
+  text-decoration: none;
+  color: rgb(222, 102, 0);
+  font-size: 12px;
+
+}
+.btn{
+width: 120px;
+
+}
+
+.d-grid .btn a {
+  text-decoration: none;
+  color: rgb(0, 63, 90);
+  font-size: 15px;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 50px;
+  gap: 30px;
+  place-items: center;
+
+}
+.grid-container .grid-item {
+  border: solid 4px;
+  border-color: rgb(222, 102, 0);
+  border-radius: 15px;
+    width: 80vw;
+
+}
+.grid-container .grid-item .links {
+  text-decoration: none;
+  color: rgb(222, 102, 0);
+
+}
+.grid-container .grid-item .links .portadas {
+   height: 30vh;
+   place-items: center;
+   justify-content: center;
+}
+.fotos .carousel .carousel-inner .carousel-item .d-block {
+  width: 100vw;
+}
+.login .form-floating {
+  width:80vw;
+}
+iframe{
+
+width:400px;
+height:315px;
+} 
+}
 /*# sourceMappingURL=styles.css.map */
