@@ -68,6 +68,7 @@ h1 {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  max-width: 99%;
 }
 .fotos .carousel .carousel-inner .carousel-item .d-block {
   width: 100vw;
@@ -82,6 +83,23 @@ footer {
 footer .redes {
   height: 8vh;
   width: auto;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 850px;
+  }
+  footer .redes {
+    height: 8vh;
+    width: auto;
+  }
+}
+h2 {
+  margin-top: 20px;
 }
 
 .box-contacto {
@@ -143,6 +161,8 @@ footer .redes {
   border: solid 4px;
   border-color: rgb(222, 102, 0);
   border-radius: 15px;
+  width: 23vw;
+  text-align: center;
 }
 .grid-container .grid-item .links {
   text-decoration: none;
@@ -173,12 +193,14 @@ footer .redes {
     border: solid 4px;
     border-color: rgb(222, 102, 0);
     border-radius: 15px;
+    width: 60vw;
+    text-align: center;
   }
   .grid-container .grid-item .links {
     text-decoration: none;
     color: rgb(222, 102, 0);
     place-items: center;
-    font-size: 15px;
+    font-size: 14px;
   }
   .grid-container .grid-item .links .portadas {
     height: 20vh;
@@ -257,6 +279,33 @@ table .quiensoy td {
     margin: 20px;
     gap: 20px;
     height: 25vh;
+  }
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+.grid2 .animate__animated {
+  margin: 20px;
+  gap: 20px;
+  height: 15vh;
+  place-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 20px;
+    gap: 20px;
+    height: 17vh;
+  }
+  .grid2 .foto_categoria {
+    margin: 20px;
+    gap: 20px;
+    height: 17vh;
   }
 }
 * {

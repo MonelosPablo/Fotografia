@@ -11,6 +11,8 @@
         border: solid 4px;
         border-color: v.$color1;
         border-radius: 15px;
+        width: 23vw;
+        text-align: center;
         .links{
             text-decoration: none;
             color: v.$color1;
@@ -48,11 +50,13 @@
         border: solid 4px;
         border-color: v.$color1;
         border-radius: 15px;
+        width: 60vw;
+        text-align: center;
         .links{
             text-decoration: none;
             color: v.$color1;
             place-items: center;
-            font-size: 15px;
+            font-size: 14px;
 
             .portadas{
                 height: 20vh;

@@ -1,7 +1,10 @@
 @use "variables" as v;
 @use "footer";
 
+h2{
+margin-top: 20px;
 
+}
 .box-contacto{
         display: flex;
         flex-direction: column;

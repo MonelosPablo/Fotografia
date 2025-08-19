@@ -10,3 +10,18 @@ footer{
         width: auto;
     }
 }
+@media (min-width: 320px) and (max-width:430px){
+    footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 850px;
+    .redes{
+
+        height: 8vh;
+        width: auto;
+    }
+}
+
+}
