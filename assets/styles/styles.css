@@ -30,13 +30,90 @@ h1 {
 
 /*MediaQueri para celular*/
 @media (min-width: 320px) and (max-width: 430px) {
-    .box-contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  body .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 63, 90);
+    color: rgb(222, 102, 0);
+    font-size: 11px;
+    max-width: 430px;
+    height: 200px;
+  }
+  body .flex a .logo {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 12vh;
+    width: auto;
+  }
+  body .flex ul {
+    display: flex;
+    gap: 20px;
+    width: 5px;
+    list-style: none;
+    align-items: center;
+    width: 300px;
+  }
+  body .flex ul li a {
+    text-decoration: none;
+    color: rgb(222, 102, 0);
+  }
+}
+.fotos {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fotos .carousel .carousel-inner .carousel-item .d-block {
+  width: 100vw;
+}
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+footer .redes {
+  height: 8vh;
+  width: auto;
+}
+
+.box-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-contacto .redes {
+  height: 6vh;
+  width: auto;
+}
+.box-contacto .rnumero:hover {
+  background-color: #25D366;
+}
+.box-contacto .message-box .message-input {
+  width: 30vw;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.login .form-floating {
+  width: 20vw;
+}
+.login .form-floating .form-control {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
   .login {
     display: flex;
     flex-direction: column;
@@ -51,62 +128,6 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 63, 90);
-  color: rgb(235, 217, 200);
-  flex-direction: column;
-}
-.flex a .logo {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  height: 15vh;
-  width: auto;
-}
-.flex ul {
-  display: flex;
- justify-content: center;
-  gap: 20px;
-  list-style: none;
-  align-items: center;
-  font-size: 10px;
-  width: 5px;
-  height: 80px;
-}
-.flex ul li a {
-  text-decoration: none;
-  color: rgb(222, 102, 0);
-}
-iframe {width:400px;
-    height:315px;
-}
-footer{
-    display:flex;
-        justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-.redes{
-
-    width: 12vw;
-    justify-content: center;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 50px;
-  gap: 30px;
-  place-items: center;
-}
-.grid-container .grid-item {
-
-  border: solid 4px;
-  border-color: rgb(222, 102, 0);
-  border-radius: 15px;
-  width: 100px;
-}
 }
 .grid-container {
   display: grid;
@@ -137,7 +158,39 @@ footer{
   color: rgb(0, 63, 90);
 }
 
-
+/*MediaQueri para celular*/
+@media (min-width: 320px) and (max-width: 430px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px;
+    gap: 30px;
+  }
+  .grid-container .grid-item {
+    border: solid 4px;
+    border-color: rgb(222, 102, 0);
+    border-radius: 15px;
+  }
+  .grid-container .grid-item .links {
+    text-decoration: none;
+    color: rgb(222, 102, 0);
+    place-items: center;
+    font-size: 15px;
+  }
+  .grid-container .grid-item .links .portadas {
+    height: 20vh;
+    max-width: 100vw;
+  }
+  .grid-container .grid-item:hover {
+    border: solid 4px;
+    border-color: rgb(0, 63, 90);
+  }
+  .grid-container .grid-item:hover .links:hover {
+    text-decoration: none;
+    color: rgb(0, 63, 90);
+    text-align: center;
+  }
+}
 table {
   display: flex;
   justify-content: center;
@@ -153,6 +206,27 @@ table .quiensoy td {
   text-align: center;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  table {
+    display: flex;
+    justify-content: center;
+  }
+  table .quiensoy {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  table .quiensoy td {
+    border: solid 3px;
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+  }
+  table .quiensoy td iframe {
+    width: 330px;
+    height: 315px;
+  }
+}
 .volver {
   display: flex;
   justify-content: center;
@@ -161,13 +235,27 @@ table .quiensoy td {
 .grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
 }
 .grid1 .foto {
   margin: 20px;
   gap: 20px;
   height: 25vh;
+  place-items: center;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .grid1 .foto {
+    margin: 20px;
+    gap: 20px;
+    height: 25vh;
+  }
+}
 * {
   font-family: "Roboto Condensed", sans-serif;
   color: rgb(0, 63, 90);

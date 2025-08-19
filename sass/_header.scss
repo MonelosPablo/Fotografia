@@ -39,16 +39,21 @@ h1{
 body{
     .flex{
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: v.$color1;
-        color: v.$color2;
+        background-color: v.$color2;
+        color: v.$color1;
+        font-size: 11px;
+        max-width: 430px;
+        height: 200px;
+
 
         a{
             .logo{
                 margin-top: 10%;
                 margin-bottom: 10%;
-                height: 5vh;
+                height: 12vh;
                 width: auto;
             }
         }
@@ -58,9 +63,11 @@ body{
             width: 5px;
             list-style: none;
             align-items: center;
+            width: 300px;
             li{
                 
                 a{
+
                     text-decoration: none;
                     color: v.$color1;
                 }
