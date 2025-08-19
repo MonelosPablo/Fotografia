@@ -41,6 +41,9 @@ h1 {
     max-width: 430px;
     height: 200px;
   }
+  body .flex h1 {
+    color: rgb(235, 217, 200);
+  }
   body .flex a .logo {
     margin-top: 10%;
     margin-bottom: 10%;
