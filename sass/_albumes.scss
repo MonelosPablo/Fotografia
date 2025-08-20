@@ -3,24 +3,23 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 50px;
+    margin: 30px;
     gap: 30px;
     place-items: center;
-
     .grid-item{
         border: solid 4px;
         border-color: v.$color1;
         border-radius: 15px;
-        width: 23vw;
+        width: 20vw;
+        height: 30vh;
         text-align: center;
         .links{
             text-decoration: none;
             color: v.$color1;
-            max-width: 30vw;
+            place-content: center;
 
             .portadas{
-                max-height: 25vh;
-
+                max-height: 20vh;
             }
 
         }
