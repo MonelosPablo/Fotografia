@@ -4,13 +4,13 @@ h1{
     color: v.$color5;
 
 }
+
 .flex{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     background-color: v.$color2;
     color: v.$color5;
-
     a{
         .logo{
             margin-top: 10%;
@@ -36,45 +36,11 @@ h1{
 /*MediaQueri para celular*/
 
 @media (min-width: 320px) and (max-width:430px){
-body{
     .flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        background-color: v.$color2;
-        color: v.$color1;
-        font-size: 11px;
-        max-width: 430px;
-        height: 200px;
-
-        h1{
-            color: v.$color5;
-        }
-        a{
-            .logo{
-                margin-top: 10%;
-                margin-bottom: 10%;
-                height: 12vh;
-                width: auto;
-            }
-        }
-        ul{
-            display: flex;
-            gap: 20px;
-            width: 5px;
-            list-style: none;
-            align-items: center;
-            width: 300px;
-            li{
-                
-                a{
-
-                    text-decoration: none;
-                    color: v.$color1;
-                }
-            }
-        }
-    }
-    }
+    display: flex;
+    justify-content:space-around;
+    background-color: v.$color2;
+    color: v.$color5;
 }
+}
+
