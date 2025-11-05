@@ -2,7 +2,7 @@
 @use "footer";
 table{
         display: flex;
-justify-content: center;
+        justify-content: center;
         .quiensoy{
         display: flex;
         flex-direction: column;
@@ -11,31 +11,27 @@ justify-content: center;
                 margin: 5px;
                 align-items: center;
                 text-align: center;
-
             }
         }
 }
 @media (min-width: 320px) and (max-width:430px){
-table{
-        display: flex;
-justify-content: center;
-        .quiensoy{
-        display: flex;
-        flex-direction: column;
-        width: 350px;
-            td{
-                border: solid 3px;
-                margin: 5px;
-                align-items: center;
-                text-align: center;
-                iframe{
-                     width:330px;
-                     height:315px;
-                    }
-            }
+        table{
+                display: flex;
+                justify-content: center;
+                .quiensoy{
+                display: flex;
+                flex-direction: column;
+                width: 350px;
+                td{
+                        border: solid 3px;
+                        margin: 5px;
+                        align-items: center;
+                        text-align: center;
+                        iframe{
+                        width:330px;
+                        height:315px;
+                        }
+                }
+                }    
         }
-        
-}
-
-
 }

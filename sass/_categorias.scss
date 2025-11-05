@@ -4,13 +4,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     place-items: center;
-.animate__animated{
+    .animate__animated{
 
-    margin: 20px;
-    gap: 20px;
-    height:15vh;
-    place-items: center;
-}    
+        margin: 20px;
+        gap: 20px;
+        height:15vh;
+        place-items: center;
+    }    
 }
 @media (min-width: 320px) and (max-width:430px){
 
@@ -20,12 +20,10 @@
     place-items: center;
     justify-content: center;
     width: 420px;
-
-.foto_categoria{
-
-    margin: 10px;
-    gap: 10px;
-    height:12vh;
-}    
-}
+    .foto_categoria{
+        margin: 10px;
+        gap: 10px;
+        height:12vh;
+    }    
+    }
 }

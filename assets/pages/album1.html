@@ -1,68 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shorcut icon" href="../img/logo_blanco.png" type="image x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/styles.css">
-<!--SEO-->
-        <meta name="description" content="fotos de eventos, deportes y actividades diversas">
-        <meta name="keywords" content="foto, fotografia, fotografos, banco de imagenes, contenido visual, deporte, actividades, eventos, Argentina">
-        
-    <title>FotosYa - ALBUM COMPLETO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/logo_blanco.png" type="image/x-icon">
+  <title>FotosYa - Álbum 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <meta name="description" content="Álbum de fotos profesionales en línea, compra tus fotos favoritas al instante.">
+  <meta name="keywords" content="foto, fotografía, fotógrafos, deportes, eventos, contenido visual, Argentina">
 </head>
-
 <body>
-<!--Menú de navegacion-->
-        <header class="flex">
-        <nav class="navbar navbar-expand-lg bg-osakan">
-            <div class="container-fluid justify-content-center">
-                <a class="navbar-brand" href="../../index.html">
-                    <img src="../img/logo_beige1.png" alt="Logo" style="height: 50px;">
-                </a>
-                <button class="navbar-toggler collapsed custom-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOsakan" aria-controls="navbarOsakan" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <h1 class="animate__animated animate__pulse">¡TUS FOTOS AL INSTANTE!</h1>
-              </div>
-                <div class="collapse navbar-collapse" id="navbarOsakan"><br>
-                    <ul class="navbar-text mb-0 h6">
-                        <li class="nav-item">
-                            <a class="nav-link osakan-link" href="./albumes.html">Buscar Fotos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link osakan-link" href="./login.html">Vender Fotos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link osakan-link" href="./fotografo1.html">Contratar Fotografo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link osakan-link" href="./contacto.html">Contacto</a>
-                        </li>
-                        <div class="d-flex">
-                        <a href="./login.html" class="btn btn-light">Ingresar</a>
-                        </div>
-                    </ul>
+  <header class="flex">
+    <nav class="navbar navbar-expand-lg bg-osakan">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../img/logo_beige1.png" alt="Logo" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler collapsed custom-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOsakan" aria-controls="navbarOsakan" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span></span>
+          <span></span>
+        </button>
+        <h1 class="animate__animated animate__pulse text-light">¡TUS FOTOS AL INSTANTE!</h1>
+      </div>
 
-                </div>
-            </div>
-        </nav>
-        </header>
-<!--Ejemplo de Album cargado - a desarrollar-->
-    <h2>ALBUM COMPLETO</h2>
-    <a href="../pages/albumes.html" class="volver">Volver a albumes</a><br>
-    <section class="grid1">
-    <img src="../img/Portada_1.JPG" alt="Ejemplo de foto" class="foto">
-    <img src="../img/Portada_2.JPG" alt="Ejemplo de foto" class="foto">
-    <img src="../img/Portada_3.JPG" alt="Ejemplo de foto" class="foto">
-    <img src="../img/Portada_4.JPG" alt="Ejemplo de foto" class="foto">
-    <img src="../img/Portada_5.JPG" alt="Ejemplo de foto" class="foto">
-    <img src="../img/Portada_6.JPG" alt="Ejemplo de foto" class="foto">
+      <div class="collapse navbar-collapse" id="navbarOsakan"><br>
+        <ul class="navbar-text mb-0 h6">
+          <li class="nav-item">
+            <a class="nav-link osakan-link" href="./albumes.html">Buscar Fotos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link osakan-link" href="./login.html">Vender Fotos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link osakan-link" href="./fotografo1.html">Contratar Fotógrafo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link osakan-link" href="./contacto.html">Contacto</a>
+          </li>
+          <div class="d-flex">
+            <a href="./login.html" class="btn btn-light">Ingresar</a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2>ÁLBUM COMPLETO</h2>
+      <a href="./carrito.html" class="btn btn-primary">Ver carrito</a>
+    </div>
+
+    <section class="galeria grid1">
+      <div class="foto-item">
+        <img src="../img/Portada_1.JPG" alt="Foto 1" class="foto">
+        <p class="foto-nombre">Foto 1</p>
+        <p class="foto-precio">$2500</p>
+        <button class="agregar-carrito btn btn-success">Agregar al carrito</button>
+      </div>
+
+      <div class="foto-item">
+        <img src="../img/Portada_2.JPG" alt="Foto 2" class="foto">
+        <p class="foto-nombre">Foto 2</p>
+        <p class="foto-precio">$2500</p>
+        <button class="agregar-carrito btn btn-success">Agregar al carrito</button>
+      </div>
+
+      <div class="foto-item">
+        <img src="../img/Portada_3.JPG" alt="Foto 3" class="foto">
+        <p class="foto-nombre">Foto 3</p>
+        <p class="foto-precio">$2500</p>
+        <button class="agregar-carrito btn btn-success">Agregar al carrito</button>
+      </div>
+
+      <div class="foto-item">
+        <img src="../img/Portada_4.JPG" alt="Foto 4" class="foto">
+        <p class="foto-nombre">Foto 4</p>
+        <p class="foto-precio">$2500</p>
+        <button class="agregar-carrito btn btn-success">Agregar al carrito</button>
+      </div>
+
+      <div class="foto-item">
+        <img src="../img/Portada_5.JPG" alt="Foto 5" class="foto">
+        <p class="foto-nombre">Foto 5</p>
+        <p class="foto-precio">$2500</p>
+        <button class="agregar-carrito btn btn-success">Agregar al carrito</button>
+      </div>
+
+      <div class="foto-item">
+        <img src="../img/Portada_6.JPG" alt="Foto 6" class="foto">
+        <p class="foto-nombre">Foto 6</p>
+        <p class="foto-precio">$2500</p>
+        <button class="agregar-carrito btn btn-success">Agregar al carrito</button>
+      </div>
     </section>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <footer class="text-center mt-4 mb-3">
+    <a href="https://linktr.ee/naturecapture"><img src="../img/logo_linktree.png" alt="Más redes" class="redes"></a>
+    <a href="https://www.instagram.com/_natcap/"><img src="../img/logo_instagram.png" alt="Instagram" class="redes"></a>
+  </footer>
+  <div id="admin-banner" class="admin-banner" style="display: none;">
+    Bienvenido Admin
+    <button id="logout-btn" class="logout-btn">Cerrar sesión</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="../../js/main.js"></script>
 </body>
 </html>

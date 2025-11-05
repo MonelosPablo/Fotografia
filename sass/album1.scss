@@ -1,0 +1,76 @@
+@use "variables" as v;
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 30px;
+  column-gap: 30px;
+  row-gap: 120px;
+  place-items: center;
+
+.foto-item {
+  border: solid 4px;
+  border-color: v.$color1;
+  border-radius: 15px;
+  width: 20vw;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: border-color 0.3s ease;
+
+    .foto {
+      max-height: 20vh;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .foto-nombre {
+      margin-top: 8px;
+      font-weight: 600;
+      color: v.$color1;
+    }
+
+    .foto-precio {
+      color: v.$color2;
+      font-weight: 500;
+    }
+
+    .agregar-carrito {
+      margin-top: 10px;
+      background-color: v.$color1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .agregar-carrito:hover {
+      background-color: v.$color2;
+    }
+  }
+
+  .foto-item:hover {
+    border-color: v.$color2;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    margin: 50px;
+    row-gap: 40px;
+    .foto-item {
+      width: 65vw;
+      height: 25vh;
+      .foto {
+        height: 20vh;
+        max-width: 90vw;
+      }
+      .foto-nombre {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -3,25 +3,22 @@
 
 h2{
 margin-top: 20px;
-
 }
 .box-contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .redes{
-        height: 6vh;
-        width: auto;
-        }
-        .rnumero:hover{
-            background-color: #25D366;
-
-        }
-            .message-box{
-                .message-input{
-                        width: 30vw;
-                }
-
-            }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .redes{
+    height: 6vh;
+    width: auto;
+    }
+    .rnumero:hover{
+        background-color: #25D366;
+    }
+    .message-box{
+    .message-input{
+        width: 30vw;
+    }
+    }
 }

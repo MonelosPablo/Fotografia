@@ -2,7 +2,6 @@
 
 h1{
     color: v.$color5;
-
 }
 
 .flex{
@@ -33,7 +32,6 @@ h1{
         }
     }
 }
-/*MediaQueri para celular*/
 
 @media (min-width: 320px) and (max-width:430px){
     .flex{
@@ -42,13 +40,11 @@ h1{
     max-width: 430px;
     background-color: v.$color2;
     color: v.$color5;
-    .navbar{
-        .collapse{
-            max-width: 400px;
-
-
+        .navbar{
+            .collapse{
+                max-width: 400px;
+            }
         }
     }
-}
 }
 

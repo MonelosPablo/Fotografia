@@ -1,118 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FotosYa - Inicio</title>
-        <link rel="shorcut icon" href="./assets/img/logo_blanco.png" type="image x-icon">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/styles/styles.css"> 
-<!--SEO-->
-        <meta name="description" content="Compra y vende tus fotos al instante, sin intermediarios, con acceso a fotos de eventos, deportes y actividades diversas">
-        <meta name="keywords" content="foto, fotografia, fotografos, banco de imagenes, contenido visual, deporte, actividades, eventos, Argentina">
-        <meta name="author" content="Nature Capture">
-        <meta name="owner" content="Fotos Ya">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FotosYa - Inicio</title>
+    <link rel="shortcut icon" href="./assets/img/logo_blanco.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <!-- SEO -->
+    <meta name="description" content="Compra y vende tus fotos al instante, sin intermediarios, con acceso a fotos de eventos, deportes y actividades diversas"/>
+    <meta name="keywords" content="foto, fotografia, fotografos, banco de imagenes, contenido visual, deporte, actividades, eventos, Argentina"/>
+    <meta name="author" content="Nature Capture" />
+    <meta name="owner" content="Fotos Ya" />
 
-    </head>
+    <!-- Javascript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script defer src="./js/main.js"></script>
+  </head>
 
-    <body>
-<!--Menú de navegacion-->
-        <header class="flex">
-        <nav class="navbar navbar-expand-lg bg-osakan">
-            <div class="container-fluid justify-content-center">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./assets/img/logo_beige1.png" alt="Logo" style="height: 50px;">
-                </a>
-                <button class="navbar-toggler collapsed custom-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOsakan" aria-controls="navbarOsakan" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <h1 class="animate__animated animate__pulse">¡TUS FOTOS AL INSTANTE!</h1>
-              </div>
-                <div class="collapse navbar-collapse" id="navbarOsakan"><br>
-                    <ul class="navbar-text mb-0 h6">
-                        <li class="nav-item">
-                            <a class="nav-link osakan-link" href="./assets/pages/albumes.html">Buscar Fotos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link osakan-link" href="./assets/pages/login.html">Vender Fotos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link osakan-link" href="./assets/pages/fotografo1.html">Contratar Fotografo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link osakan-link" href="./assets/pages/contacto.html">Contacto</a>
-                        </li>
-                        <div class="d-flex">
-                        <a href="./assets/pages/login.html" class="btn btn-light">Ingresar</a>
-                        </div>
-                    </ul>
+  <body>
+    <!-- Menú -->
+    <header class="flex">
+      <nav class="navbar navbar-expand-lg bg-osakan">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/img/logo_beige1.png" alt="Logo" style="height: 50px" />
+          </a>
+          <button
+            class="navbar-toggler collapsed custom-icon"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarOsakan"
+            aria-controls="navbarOsakan"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <span></span>
+            <span></span>
+          </button>
+          <h1 class="animate__animated animate__pulse">¡TUS FOTOS AL INSTANTE!</h1>
+        </div>
 
-                </div>
-            </div>
-        </nav>
-        </header>
-        <!--Carrusel de fotos-->
-        <section class="fotos">
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" style="transition: transform 2s ease-out;">
-      <img src="./assets/img/image1.png" class="d-block" alt="...">
-    </div>
-    <div class="carousel-item" style="transition: transform 2s ease-out;">
-      <img src="./assets/img/image2.png" class="d-block" alt="...">
-    </div>
-    <div class="carousel-item" style="transition: transform 2s ease-out;">
-      <img src="./assets/img/image3.png" class="d-block" alt="...">
-    </div>
-    <div class="carousel-item" style="transition: transform 2s ease-out;">
-      <img src="./assets/img/image4.png" class="d-block" alt="...">
-    </div>
-  </div>
-</div>
-</section>
-<!--botones para ir a compra o venta-->
-        <h2>Comprá tus fotos practicando tu actividad favorita</h2>
-            <br>
-            <div class="d-grid gap-2 col-2 mx-auto">
-                <button class="btn btn-info" type="button">
-                    <a href="./assets/pages/albumes.html">Comprar Fotos
-                    </a>
-                </button>
-                <button class="btn btn-info" type="button">
-                    <a href="./assets/pages/login.html">Vender Fotos
-                    </a>
-                </button>
-            </div>
-            <br>   
-            <br>
-    <!--categorias-->
-    <section class="grid2">
-      <img src="./assets/img/cat1.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s">
-      <img src="./assets/img/cat2.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s">
-      <img src="./assets/img/cat3.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s">
-      <img src="./assets/img/cat4.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s">
-      <img src="./assets/img/cat5.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s">
-      <img src="./assets/img/cat6.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s">
-      <img src="./assets/img/cat7.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s">
-      <img src="./assets/img/cat8.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s">
-      <img src="./assets/img/cat9.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s">
-      <img src="./assets/img/cat10.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s">
-      <img src="./assets/img/cat11.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s">
-      <img src="./assets/img/cat12.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s">
+        <div class="collapse navbar-collapse" id="navbarOsakan">
+          <ul class="navbar-text mb-0 h6">
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carrusel -->
+    <section class="fotos">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="transition: transform 2s ease-out">
+            <img src="./assets/img/image1.png" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item" style="transition: transform 2s ease-out">
+            <img src="./assets/img/image2.png" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item" style="transition: transform 2s ease-out">
+            <img src="./assets/img/image3.png" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item" style="transition: transform 2s ease-out">
+            <img src="./assets/img/image4.png" class="d-block" alt="..." />
+          </div>
+        </div>
+      </div>
     </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-        <!--Final de la página/redes sociales-->
+
+    <h2>Comprá tus fotos practicando tu actividad favorita</h2>
+    <br />
+    <div class="d-grid gap-2 col-2 mx-auto">
+      <button class="btn btn-info" type="button">
+        <a href="./assets/pages/albumes.html">Comprar Fotos</a>
+      </button>
+      <button class="btn btn-info" type="button">
+        <a href="./assets/pages/login.html">Vender Fotos</a>
+      </button>
+      <button class="btn btn-info" type="button">
+        <a href="./assets/pages/carrito.html" class="ver-carrito">Ver mi carrito</a>
+      </button>
+    </div>
+
+    <section class="grid2">
+      <img src="./assets/img/cat1.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s" />
+      <img src="./assets/img/cat2.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s" />
+      <img src="./assets/img/cat3.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s" />
+      <img src="./assets/img/cat4.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s" />
+      <img src="./assets/img/cat5.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s" />
+      <img src="./assets/img/cat6.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-1s" />
+      <img src="./assets/img/cat7.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s" />
+      <img src="./assets/img/cat8.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s" />
+      <img src="./assets/img/cat9.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s" />
+      <img src="./assets/img/cat10.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s" />
+      <img src="./assets/img/cat11.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s" />
+      <img src="./assets/img/cat12.png" alt="categoria" class="animate__animated animate__flipInY animate__delay-2s" />
+    </section>
+
     <footer>
-        <a href="https://linktr.ee/naturecapture"><img src="./assets/img/logo_linktree.png" alt="Más redes" class="redes"></a>
-        <a href="https://www.instagram.com/_natcap/"><img src="./assets/img/logo_instagram.png" alt="Instagram" class="redes"></a>
+      <a href="https://linktr.ee/naturecapture"><img src="./assets/img/logo_linktree.png" alt="Más redes" class="redes" /></a>
+      <a href="https://www.instagram.com/_natcap/"><img src="./assets/img/logo_instagram.png" alt="Instagram" class="redes" /></a>
     </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      </body>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

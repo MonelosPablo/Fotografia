@@ -1,0 +1,128 @@
+@use "variables" as v;
+
+#carrito-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  padding: 30px;
+  justify-items: center;
+}
+
+.item-carrito {
+  border: solid 4px v.$color1;
+  border-radius: 15px;
+  width: 20vw;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    border-color: v.$color2;
+    transform: scale(1.05);
+  }
+
+  .miniatura {
+    max-height: 20vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: v.$color1;
+  }
+
+  .precio {
+    color: v.$color2;
+    font-weight: 600;
+  }
+
+  .eliminar {
+    margin-top: 10px;
+    background-color: #ff4e50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #c0392b;
+    }
+  }
+}
+
+#total {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: v.$color1;
+}
+
+#vaciar-carrito,
+#finalizar-compra {
+  background-color: v.$color1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: v.$color2;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  #carrito-contenedor {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .item-carrito {
+    width: 70vw;
+
+    .miniatura {
+      height: 20vh;
+      max-width: 90vw;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+#carrito-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  margin: 30px;
+}
+
+#carrito-contenedor .foto-item {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border: solid 4px v.$color1;
+  border-radius: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#carrito-contenedor .foto-item .foto {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}

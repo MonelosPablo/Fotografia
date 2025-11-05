@@ -11,26 +11,23 @@
         .form-control{
         justify-content: center;
         align-items: center;
-
+        }
     }
 }
-}
-@media (min-width: 320px) and (max-width:430px){
 
-.login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    .form-floating{
-    width: 80vw;
-        .form-control{
+@media (min-width: 320px) and (max-width:430px){
+    .login{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        margin-top: 30px;
+        .form-floating{
+        width: 80vw;
+            .form-control{
+            justify-content: center;
+            align-items: center;
+            }
+        }
     }
-}
-}
-
 }
